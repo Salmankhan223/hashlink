@@ -27,7 +27,7 @@ const Shorten = () => {
       fetch("/api/generate", requestOptions)
       .then((response)=> response.json())
       .then((result)=>{
-        setGenerated(`${process.env.NEXT_PUBLIC_HOST}/${shorturl}`)
+        setGenerated(`${process.env.MONGODB_URI}/${shorturl}`)
         seturl("")
         setshorturl("")
         console.log(result)
