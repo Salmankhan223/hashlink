@@ -27,7 +27,7 @@
 
 import { MongoClient } from "mongodb";
 
-const uri = "mongodb://127.0.0.1:27017/bitlink";
+const uri = process.env.MONGODB_URI;
 const options = {};
 
 let client;
