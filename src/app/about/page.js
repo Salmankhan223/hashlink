@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function AboutPage() {
@@ -21,11 +22,11 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold mb-4 text-gray-900">Our Mission</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              In today's fast-paced digital world, sharing long and complicated links can be frustrating. At HashLink, our mission is to simplify the way people share links. Whether you are a digital marketer, a small business owner, or just sharing something with a friend, we provide a seamless experience to shorten and manage your URLs.
+              In today&apos;s fast-paced digital world, sharing long and complicated links can be frustrating. At HashLink, our mission is to simplify the way people share links. Whether you are a digital marketer, a small business owner, or just sharing something with a friend, we provide a seamless experience to shorten and manage your URLs.
             </p>
             <h2 className="text-3xl font-bold mb-4 text-gray-900">Why Choose Us?</h2>
             <p className="text-gray-600 leading-relaxed">
-              We don't just shorten links; we ensure they are fast, reliable, and secure. With our built-in database connectivity, your links are stored safely and redirect users instantly without any annoying delays.
+              We don&apos;t just shorten links; we ensure they are fast, reliable, and secure. With our built-in database connectivity, your links are stored safely and redirect users instantly without any annoying delays.
             </p>
           </div>
           
@@ -62,12 +63,12 @@ export default function AboutPage() {
           <p className="text-gray-400 mb-8 max-w-xl mx-auto">
             Join thousands of users who trust HashLink for clean, trackable, and professional URLs.
           </p>
-          <a 
+          <Link 
             href="/" 
             className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 inline-block"
           >
             Go to Dashboard
-          </a>
+          </Link>
         </div>
       </section>
     </div>

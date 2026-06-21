@@ -3,7 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 import Link from 'next/link'
 
-const shorten = () => {
+const Shorten = () => {
     const [url, seturl] = useState("")
     const [shorturl, setshorturl] = useState("")
     const [generated, setGenerated] = useState("")
@@ -60,12 +60,12 @@ const shorten = () => {
     
           {/* Mini Footer */}
       <footer className="border-t border-gray-200 bg-white py-8 text-center text-sm text-gray-500">
-               <a 
+               <Link 
             href="/" 
             className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-10 py-3 rounded-lg transition-colors duration-200 inline-block"
           >
             Go to Dashboard
-          </a>
+          </Link>
         <p className='mt-5'>&copy; {new Date().getFullYear()} HashLink. All rights reserved.</p>
         
       </footer>
@@ -74,4 +74,4 @@ const shorten = () => {
   )
 }
 
-export default shorten
+export default Shorten
