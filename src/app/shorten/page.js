@@ -27,7 +27,7 @@ const Shorten = () => {
       fetch("/api/generate", requestOptions)
       .then((response)=> response.json())
       .then((result)=>{
-        setGenerated(`${process.env.MONGODB_URI}/${shorturl}`)
+        setGenerated(`https://hashlink-jade.vercel.app/${shorturl}`)
         seturl("")
         setshorturl("")
         console.log(result)
